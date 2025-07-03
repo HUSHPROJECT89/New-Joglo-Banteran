@@ -1,1 +1,43 @@
-<!DOCTYPE html><html><head><link rel='stylesheet' href='style.css'><script src='script.js' defer></script></head><body><header>Pembayaran</header><main><select id='menuSelect'></select><input type='number' id='jumlah' placeholder='Jumlah'><button onclick='tambahPesanan()'>Tambah</button><div id='daftarPesanan'></div><div id='totalContainer'></div><input type='number' id='bayarInput' placeholder='Bayar'><button onclick='hitungKembalian()'>Bayar</button><div id='hasilBayar'></div><button onclick='selesaiPembayaran()'>Selesai</button></main></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pembayaran</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>Halaman Pembayaran</header>
+  <main>
+    <form id="form-pembayaran">
+      <select id="pilih-menu" required>
+        <option value="">-- Pilih Menu --</option>
+      </select>
+      <input type="number" id="jumlah" placeholder="Jumlah" min="1" value="1" required />
+      <button type="submit">Tambah</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Menu</th>
+          <th>Jumlah</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody id="daftar-pesanan"></tbody>
+    </table>
+
+    <h3>Total: <span id="total-harga">Rp0</span></h3>
+
+    <div id="bayar-section" style="display:none">
+      <input type="number" id="uang-dibayar" placeholder="Uang Dibayar" />
+      <button onclick="hitungKembalian()">Bayar</button>
+      <p id="hasil-bayar"></p>
+    </div>
+
+    <button id="selesai" style="display:none">Selesai</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

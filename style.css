@@ -1,1 +1,47 @@
-body{font-family:sans-serif;background:#fff;}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('bg-beranda.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #4B2E1E; /* Coklat tua */
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  color: #6D4C41;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+nav a {
+  padding: 10px 20px;
+  background-color: #D7CCC8; /* Coklat krem */
+  color: #4E342E;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #BCAAA4;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
