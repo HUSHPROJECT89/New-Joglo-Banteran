@@ -1,8 +1,9 @@
 body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f1e6;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff8f0;
-  color: #5a2c0d;
+  padding: 0;
+  color: #3e2c1c;
 }
 
 header {
@@ -11,97 +12,70 @@ header {
   padding: 1rem;
   text-align: center;
   font-size: 1.5rem;
-  font-weight: bold;
-  border-bottom: 4px solid #5a2c0d;
 }
 
 main {
-  padding: 1.5rem;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  background-color: #fff9f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
-form input,
-form select,
-form button {
-  padding: 0.5rem;
+input, select, button {
+  padding: 0.75rem;
   font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #8b5e3c;
+  border: 1px solid #b08968;
+  border-radius: 5px;
 }
 
-form button {
-  background-color: #8b5e3c;
+button {
+  background-color: #a47148;
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-form button:hover {
-  background-color: #5a2c0d;
+button:hover {
+  background-color: #8b5e3c;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-table th,
-table td {
+th, td {
   padding: 0.75rem;
-  border: 1px solid #ccc;
-  text-align: center;
+  border-bottom: 1px solid #d2b48c;
+  text-align: left;
 }
 
 h3 {
-  text-align: right;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-#bayar-section {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-#selesai {
   margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  background-color: #8b5e3c;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  display: block;
-  margin-left: auto;
 }
 
-#selesai:hover {
-  background-color: #5a2c0d;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-a {
-  color: #5a2c0d;
+#hasil-bayar {
   font-weight: bold;
-  margin-right: 1rem;
-  text-decoration: none;
+  margin-top: 1rem;
 }
 
-a:hover {
-  text-decoration: underline;
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  input, select, button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
 }
